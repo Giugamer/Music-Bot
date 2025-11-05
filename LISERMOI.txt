@@ -1,0 +1,109 @@
+🎵 BOT DISCORD "SPOTIFY++"
+
+Un bot musical complet et stylé, inspiré de Spotify, capable de :
+
+Jouer, mettre en pause, reprendre, passer et stopper des musiques 🎧
+
+Gérer une file d’attente dynamique avec affichage du temps ⏱️
+
+Créer, charger et supprimer des playlists 💾
+
+Afficher les fichiers audio disponibles 📂
+
+Uploader de nouveaux fichiers directement depuis Discord 📤
+
+Spammer des messages (limite de sécurité : 10) 📣
+
+Interface moderne avec barres de progression et boutons interactifs 🟢
+
+⚙️ INSTALLATION
+1️⃣ Prérequis
+
+Windows 10/11 ou Linux/Mac
+
+Python 3.10+ (recommandé 3.12 ou plus récent)
+
+FFmpeg installé et ajouté au PATH
+
+Télécharge FFmpeg ici :
+👉 https://ffmpeg.org/download.html
+
+Ou via winget :
+
+winget install ffmpeg
+
+2️⃣ Installer les dépendances
+
+Dans le dossier de ton bot, exécute :
+
+pip install -r requirements.txt
+
+
+Si pip n’est pas reconnu :
+
+python -m pip install -r requirements.txt
+
+️⃣ Dans les fichier .env 
+
+Mettre ton token a la place de 'your_discord_bot_token_here'.
+
+⚠️ Ne partagez jamais votre jeton Discord publiquement !
+
+Vous le trouverez sur le portail développeur Discord : → Bot → Token.
+
+4️⃣ Démarrage du bot
+
+Lance ton bot avec la commande :
+
+python bot.py
+
+🎮 COMMANDES DISPONIBLES
+Commande	Description
+/play [nom]	Joue un fichier audio depuis le dossier /audio
+/pause	Met la musique en pause
+/resume	Reprend la lecture
+/skip	Passe à la musique suivante
+/stop	Arrête la lecture et vide la file
+/queue	Affiche la file d’attente actuelle
+/clearqueue	Vide la file d’attente
+/nowplaying	Affiche la musique en cours avec le compteur
+/list	Liste les fichiers audio avec leur durée
+/upload	Upload un fichier audio sur le serveur
+/playlist_create	Crée une nouvelle playlist
+/playlist_add	Ajoute un morceau à une playlist
+/playlist_list	Liste toutes les playlists
+/playlist_load	Charge une playlist dans la file
+/playlist_delete	Supprime une playlist
+/spam	Envoie plusieurs messages rapidement
+🗂️ STRUCTURE DU DOSSIER
+📁 ton_dossier_bot/
+├── bot.py                ← Le code principal du bot
+├── requirements.txt      ← Liste des modules nécessaires
+├── .env                  ← Ton token Discord
+├── README.txt            ← Le fichier d’explication en anglais
+├── LISEZ_MOI.txt         ← Ce fichier d’explication
+│
+├── 📁 audio/              ← Tes musiques (MP3, WAV, etc.)
+└── 📁 playlists/          ← Playlists enregistrées en JSON
+
+💡 ASTUCES
+
+Les fichiers audio doivent être placés dans le dossier /audio.
+
+Le bot crée automatiquement les dossiers audio et playlists s’ils n’existent pas.
+
+Tu peux ajouter d’autres formats compatibles : .mp3, .wav, .ogg, .flac.
+
+Si le bot ne réagit pas à tes commandes, tape / dans Discord et recharge les commandes.
+
+🚀 AUTEUR & SUPPORT
+
+Créé par : [@giugamer]
+
+Langage : Python 3
+
+Version: 2.5
+
+Librairie : discord.py
+
+Version du bot : Spotify++ v2.5

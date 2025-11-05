@@ -1,0 +1,6 @@
+discord.py>=2.4.0
+yt-dlp>=2025.1.1
+ffmpeg-python>=0.2.0
+aiofiles>=24.1.0
+python-dotenv>=1.0.1
+mutagen>=1.47.0
